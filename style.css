@@ -35,23 +35,64 @@ h1 {
   text-transform: lowercase;
 }
 
-.dark-theme {
+/* Theme1 variables  */
+.theme1 {
   --bg-main: hsl(222, 26%, 31%);
   --bg-toggle: hsl(223, 31%, 20%);
   --bg-keypad: hsl(223, 31%, 20%);
   --bg-screen: hsl(224, 36%, 15%);
   --bg-accent: hsl(6, 63%, 50%);
-  --bg-desaturated: hsl(225, 21%, 49%);
+  --bg-dark: hsl(225, 21%, 49%);
   --bg-key: hsl(30, 25%, 89%);
   --clr-main: hsl(221, 14%, 31%);
   --clr-white: #fff;
   --clr-screen: #fff;
   --clr-banner: #fff;
   --clr-accent: #fff;
-  --clr-desaturated: #fff;
+  --clr-dark: #fff;
   --shadow-key: hsl(28, 16%, 65%);
   --shadow-accent: hsl(6, 70%, 34%);
-  --shadow-desaturated: hsl(224, 28%, 35%);
+  --shadow-dark: hsl(224, 28%, 35%);
+}
+
+/* Theme2 variables  */
+.theme2 {
+  --bg-main: hsl(0, 0%, 90%);
+  --bg-toggle: hsl(0, 5%, 81%);
+  --bg-keypad: hsl(0, 5%, 81%);
+  --bg-screen: hsl(0, 0%, 93%);
+  --bg-accent: hsl(25, 98%, 40%);
+  --bg-dark: hsl(185, 42%, 37%);
+  --bg-key: hsl(45, 7%, 89%);
+  --clr-main: hsl(60, 10%, 19%);
+  --clr-white: #fff;
+  --clr-screen: hsl(60, 10%, 19%);
+  --clr-banner: hsl(60, 10%, 19%);
+  --clr-accent: #fff;
+  --clr-dark: #fff;
+  --shadow-key: hsl(35, 11%, 61%);
+  --shadow-accent: hsl(25, 99%, 27%);
+  --shadow-dark: hsl(185, 58%, 25%);
+}
+
+/* Theme3 variables  */
+.theme3 {
+  --bg-main: hsl(268, 75%, 9%);
+  --bg-toggle: hsl(268, 71%, 12%);
+  --bg-keypad: hsl(268, 71%, 12%);
+  --bg-screen: hsl(268, 71%, 12%);
+  --bg-accent: hsl(176, 100%, 44%);
+  --bg-dark: hsl(281, 89%, 26%);
+  --bg-key: hsl(268, 47%, 21%);
+  --clr-main: hsl(52, 100%, 62%);
+  --clr-white: #fff;
+  --clr-screen: hsl(52, 100%, 62%);
+  --clr-banner: hsl(52, 100%, 62%);
+  --clr-accent: hsl(198, 20%, 13%);
+  --clr-dark: #fff;
+  --shadow-key: hsl(290, 70%, 36%);
+  --shadow-accent: hsl(177, 92%, 70%);
+  --shadow-dark: hsl(285, 91%, 52%);
 }
 
 main {
@@ -64,6 +105,7 @@ main {
   padding: 4rem 1rem;
 }
 
+/* banner Styles */
 .banner {
   margin-bottom: 2rem;
   display: flex;
@@ -77,7 +119,6 @@ main {
   flex-direction: column;
   align-items: flex-end;
   font-size: var(--fs-toggle);
-  transition: all 1s ease-out;
 }
 
 .toggle__labels {
@@ -121,6 +162,10 @@ main {
   opacity: 0;
 }
 
+.toggle__key input:not(:checked) {
+  cursor: pointer;
+}
+
 .toggle__key input:checked + span {
   position: absolute;
   left: 0.2rem;
@@ -132,6 +177,7 @@ main {
   border-radius: 50%;
 }
 
+/* Screen Styles */
 .screen {
   margin-bottom: 1.5rem;
 }
@@ -147,6 +193,7 @@ main {
   border-radius: var(--border-radius);
 }
 
+/* Keypad Styles */
 .keys {
   background-color: var(--bg-keypad);
   padding: 1.5rem;
@@ -170,6 +217,7 @@ main {
   box-shadow: inset 0 -3px var(--shadow-key);
   transition: box-shadow 0.1s ease-in;
   color: var(--clr-main);
+  background-color: var(--bg-key);
 }
 
 .keys .key.accent {
@@ -182,14 +230,14 @@ main {
   box-shadow: inset 0 -1px var(--shadow-accent);
 }
 
-.keys .key.desaturated {
-  color: var(--clr-desaturated);
-  background-color: var(--bg-desaturated);
-  box-shadow: inset 0 -3px var(--shadow-desaturated);
+.keys .key.dark {
+  color: var(--clr-dark);
+  background-color: var(--bg-dark);
+  box-shadow: inset 0 -3px var(--shadow-dark);
 }
 
-.keys .key.desaturated:active {
-  box-shadow: inset 0 -1px var(--shadow-desaturated);
+.keys .key.dark:active {
+  box-shadow: inset 0 -1px var(--shadow-dark);
 }
 
 .keys .key:active {
