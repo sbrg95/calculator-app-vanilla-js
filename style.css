@@ -1,0 +1,8 @@
+:root {
+  --ff-main: 'Spartan', sans-serif;
+  --fs-nums: 2rem;
+}
+
+body {
+  font-family: var(--ff-main);
+}
