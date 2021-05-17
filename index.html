@@ -13,57 +13,71 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="calculator">
-      <div class="banner">
-        <h1 class="title">calc</h1>
-        <div class="toggle">
-          <div class="toggle__title">theme</div>
-          <div class="toggle__group">
-            <label
-              ><min>1</min>
-              <input
-                class="toggle__theme accent"
-                type="radio"
-                name="theme"
-                value="dark-theme"
-            /></label>
-            <label
-              ><min>2</min>
-              <input
-                class="toggle__theme accent"
-                type="radio"
-                name="theme"
-                value="light-theme"
-            /></label>
-            <label
-              ><min>3</min>
-              <input
-                cclass="toggle__theme accent"
-                type="radio"
-                name="theme"
-                value="accent-theme"
-            /></label>
+    <main class="dark-theme">
+      <div class="calculator">
+        <div class="banner">
+          <h1 class="title">calc</h1>
+          <div class="toggle">
+            <div class="toggle__labels">
+              <label for="theme1">1</label><label for="theme2">2</label
+              ><label for="theme3">3</label>
+            </div>
+            <div class="toggle__container">
+              <div class="toggle__title">theme</div>
+              <div class="toggle__group">
+                <div class="toggle__key">
+                  <input
+                    class="toggle__theme dark"
+                    type="radio"
+                    name="theme"
+                    id="theme1"
+                    value="dark-theme"
+                    checked
+                  />
+                  <span></span>
+                </div>
+                <div class="toggle__key">
+                  <input
+                    class="toggle__theme light"
+                    type="radio"
+                    name="theme"
+                    id="theme2"
+                    value="light-theme"
+                  />
+                  <span></span>
+                </div>
+                <div class="toggle__key">
+                  <input
+                    cclass="toggle__theme accent"
+                    type="radio"
+                    name="theme"
+                    id="theme3"
+                    value="accent-theme"
+                  />
+                  <span></span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="screen">
+          <input type="text" disabled />
+        </div>
+        <div class="keys">
+          <button class="key nums">7</button><button class="key nums">8</button
+          ><button class="key nums">9</button
+          ><button class="key desaturated">del</button
+          ><button class="key nums">4</button><button class="key nums">5</button
+          ><button class="key nums">6</button><button class="key nums">+</button
+          ><button class="key nums">1</button><button class="key nums">2</button
+          ><button class="key nums">3</button><button class="key nums">-</button
+          ><button class="key nums">.</button><button class="key nums">0</button
+          ><button class="key nums">/</button><button class="key nums">x</button
+          ><button class="key desaturated">reset</button
+          ><button class="key accent">&equals;</button>
+        </div>
       </div>
-      <div class="screen">
-        <input type="text" />
-      </div>
-      <div class="keys">
-        <button class="key">7</button><button class="key">8</button
-        ><button class="key">9</button
-        ><button class="key desaturated">del</button
-        ><button class="key">4</button><button class="key">5</button
-        ><button class="key">6</button><button class="key">+</button
-        ><button class="key">1</button><button class="key">2</button
-        ><button class="key">3</button><button class="key">&minus;</button
-        ><button class="key">.</button><button class="key">0</button
-        ><button class="key">/</button><button class="key">&times;</button
-        ><button class="key desaturated">reset</button
-        ><button class="key accent">&equals;</button>
-      </div>
-    </div>
-
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
