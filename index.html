@@ -13,6 +13,57 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="calculator">
+      <div class="banner">
+        <h1 class="title">calc</h1>
+        <div class="toggle">
+          <div class="toggle__title">theme</div>
+          <div class="toggle__group">
+            <label
+              ><min>1</min>
+              <input
+                class="toggle__theme accent"
+                type="radio"
+                name="theme"
+                value="dark-theme"
+            /></label>
+            <label
+              ><min>2</min>
+              <input
+                class="toggle__theme accent"
+                type="radio"
+                name="theme"
+                value="light-theme"
+            /></label>
+            <label
+              ><min>3</min>
+              <input
+                cclass="toggle__theme accent"
+                type="radio"
+                name="theme"
+                value="accent-theme"
+            /></label>
+          </div>
+        </div>
+      </div>
+      <div class="screen">
+        <input type="text" />
+      </div>
+      <div class="keys">
+        <button class="key">7</button><button class="key">8</button
+        ><button class="key">9</button
+        ><button class="key desaturated">del</button
+        ><button class="key">4</button><button class="key">5</button
+        ><button class="key">6</button><button class="key">+</button
+        ><button class="key">1</button><button class="key">2</button
+        ><button class="key">3</button><button class="key">&minus;</button
+        ><button class="key">.</button><button class="key">0</button
+        ><button class="key">/</button><button class="key">&times;</button
+        ><button class="key desaturated">reset</button
+        ><button class="key accent">&equals;</button>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
