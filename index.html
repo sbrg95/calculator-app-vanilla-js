@@ -12,59 +12,56 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <main class="theme3">
-      <div class="calculator">
-        <div class="banner">
-          <h1 class="title">calc</h1>
-          <div class="toggle">
-            <div class="toggle__labels">
-              <label for="theme1">1</label><label for="theme2">2</label
-              ><label for="theme3">3</label>
-            </div>
-            <div class="toggle__container">
-              <div class="toggle__title">theme</div>
-              <div class="toggle__group">
-                <div class="toggle__key">
-                  <input
-                    type="radio"
-                    name="theme"
-                    id="theme1"
-                    value="theme1"
-                    checked
-                  />
-                  <span></span>
-                </div>
-                <div class="toggle__key">
-                  <input type="radio" name="theme" id="theme2" value="theme2" />
-                  <span></span>
-                </div>
-                <div class="toggle__key">
-                  <input type="radio" name="theme" id="theme3" value="theme3" />
-                  <span></span>
-                </div>
+  <body class="theme1">
+    <div class="calculator">
+      <div class="banner">
+        <h1 class="title">calc</h1>
+        <div class="toggle">
+          <div class="toggle__labels">
+            <label for="theme1">1</label><label for="theme2">2</label
+            ><label for="theme3">3</label>
+          </div>
+          <div class="toggle__container">
+            <div class="toggle__title">theme</div>
+            <div class="toggle__group">
+              <div class="toggle__key">
+                <input
+                  type="radio"
+                  name="theme"
+                  id="theme1"
+                  value="theme1"
+                  checked
+                />
+                <span></span>
+              </div>
+              <div class="toggle__key">
+                <input type="radio" name="theme" id="theme2" value="theme2" />
+                <span></span>
+              </div>
+              <div class="toggle__key">
+                <input type="radio" name="theme" id="theme3" value="theme3" />
+                <span></span>
               </div>
             </div>
           </div>
         </div>
-        <div class="screen">
-          <input type="text" disabled />
-        </div>
-        <div class="keys">
-          <button class="key nums">7</button><button class="key nums">8</button
-          ><button class="key nums">9</button
-          ><button class="key dark">del</button
-          ><button class="key nums">4</button><button class="key nums">5</button
-          ><button class="key nums">6</button><button class="key nums">+</button
-          ><button class="key nums">1</button><button class="key nums">2</button
-          ><button class="key nums">3</button><button class="key nums">-</button
-          ><button class="key nums">.</button><button class="key nums">0</button
-          ><button class="key nums">/</button><button class="key nums">x</button
-          ><button class="key dark">reset</button
-          ><button class="key accent">&equals;</button>
-        </div>
       </div>
-    </main>
+      <div class="screen">
+        <input type="text" disabled />
+      </div>
+      <div class="keys">
+        <button class="key nums">7</button><button class="key nums">8</button
+        ><button class="key nums">9</button><button class="key dark">del</button
+        ><button class="key nums">4</button><button class="key nums">5</button
+        ><button class="key nums">6</button><button class="key nums">+</button
+        ><button class="key nums">1</button><button class="key nums">2</button
+        ><button class="key nums">3</button><button class="key nums">-</button
+        ><button class="key nums">.</button><button class="key nums">0</button
+        ><button class="key nums">/</button><button class="key nums">x</button
+        ><button class="key dark">reset</button
+        ><button class="key accent">&equals;</button>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
