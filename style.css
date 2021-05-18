@@ -245,7 +245,8 @@ h1 {
   opacity: 0.9;
 }
 
-.keys .nums {
+.keys .nums,
+.keys .ops {
   font-size: var(--fs-nums);
   text-transform: lowercase;
 }
