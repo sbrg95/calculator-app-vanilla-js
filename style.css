@@ -147,6 +147,12 @@ h1 {
   border: none;
 }
 
+.toggle__group legend {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
 .toggle__key {
   position: relative;
   display: flex;
