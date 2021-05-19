@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="calculator">
-      <div class="banner">
+    <main class="calculator">
+      <header class="banner">
         <h1 class="title">calc</h1>
         <div class="toggle">
           <div class="toggle__labels">
@@ -23,7 +23,7 @@
           </div>
           <div class="toggle__container">
             <div class="toggle__title">theme</div>
-            <div class="toggle__group">
+            <fieldset class="toggle__group">
               <div class="toggle__key">
                 <input
                   type="radio"
@@ -42,12 +42,12 @@
                 <input type="radio" name="theme" id="theme3" value="theme3" />
                 <span></span>
               </div>
-            </div>
+            </fieldset>
           </div>
         </div>
-      </div>
+      </header>
       <div class="screen">
-        <input type="text" disabled />
+        <input type="text" aria-label="screen" disabled />
       </div>
       <div class="keys">
         <button class="key nums">7</button><button class="key nums">8</button
@@ -62,7 +62,7 @@
         ><button class="key dark">reset</button
         ><button class="key accent">&equals;</button>
       </div>
-    </div>
+    </main>
     <script src="scripts/theme.js"></script>
     <script src="scripts/calculator.js"></script>
   </body>
